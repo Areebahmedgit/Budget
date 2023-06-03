@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javaScript/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Budgeting App</h1>
+        <div class="Budget-flex">
+        <div class="box">
+            <div class="font-flex">
+                <p class="col">Total Budget</p>
+                <p class="col" id="total-budget">0.00</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="font-flex">
+                <p class="col">Expense</p>
+                <p id="expence" class="col">0.00</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="font-flex">
+                <p class="col">Balance</p>
+                <p  id="balance"class="col">0.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="lis">
+            <p>Expense History</p>
+            <div class="lis-con" id="list">
+                
+            </div>
+        </div>
+    <div class="top">
+        
+        <div class="enter-budget">
+            <p>Enter your Budget</p>
+            <div>
+                <input class="in1" type="number" placeholder="Enter your budget" id="budget-input">
+            </div>
+            <p id="error"></p>
+            <button onclick="fun()" class="butt">Set Budget</button>
+        </div>
+        <div class="top1">
+            <div class="exp"><p><b> Add Expense</b> </p>
+            <p id="proerror"></p>
+            
+        </div>
+            <p>Date</p>
+            <input id="date-input" type="date" placeholder="Enter Date">
+            <p>Description</p>
+            <input id="description-input" type="text" placeholder="Enter description" >
+            <p>Total Amount</p>
+            <P id="noenough"></P>
+            <p id="naga"></p>
+            <input type="number" id="amount-input" placeholder="Enter amount">
+            <button onclick="addexpen()" class="but1 butt" >Add Expense</button>
+        </div>
+        
+    </div>
+    </div>
+</body>
+</html>
